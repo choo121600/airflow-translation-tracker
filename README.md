@@ -40,7 +40,6 @@ Language-specific coverage:
 ```markdown
 ![Korean](https://your-domain.vercel.app/apache/airflow/ko?path=locales&style=for-the-badge&logo=translate)
 ```
-![Korean](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=locales&style=for-the-badge&logo=translate)
 
 
 
