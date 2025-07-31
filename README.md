@@ -19,10 +19,17 @@ Overall translation coverage:
 ![Translation Coverage](https://your-domain.vercel.app/apache/airflow?path=airflow/ui/public/i18n/locales)
 ```
 
+![Translation Coverage](https://airflow-translation-tracker.vercel.app/apache/airflow?path=airflow/ui/public/i18n/locales)
+
+
+
 Language-specific coverage:
 ```markdown
 ![Korean Translation](https://your-domain.vercel.app/apache/airflow/ko?path=airflow/ui/public/i18n/locales)
 ```
+![Korean Translation](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=airflow/ui/public/i18n/locales)
+
+
 
 ### HTML Format
 ```html
@@ -33,6 +40,9 @@ Language-specific coverage:
 ```markdown
 ![Korean](https://your-domain.vercel.app/apache/airflow/ko?path=locales&style=for-the-badge&logo=translate)
 ```
+![Korean](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=locales&style=for-the-badge&logo=translate)
+
+
 
 ## API Endpoints
 
