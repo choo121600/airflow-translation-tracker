@@ -13,7 +13,7 @@ A web service that generates language-specific translation coverage badges for G
 
 Language-specific coverage:
 ```markdown
-![ko](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![ko](https://translation-badge.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ```
 ![ar](https://translation-badge.vercel.app/apache/airflow/ar?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ![de](https://translation-badge.vercel.app/apache/airflow/de?path=airflow-core/src/airflow/ui/public/i18n/locales)
