@@ -15,15 +15,15 @@ Language-specific coverage:
 ```markdown
 ![ko](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ```
-![ar](https:/translation-badge.vercel.app/apache/airflow/ar?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![de](https:/translation-badge.vercel.app/apache/airflow/de?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![es](https:/translation-badge.vercel.app/apache/airflow/es?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![fr](https:/translation-badge.vercel.app/apache/airflow/fr?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![he](https:/translation-badge.vercel.app/apache/airflow/he?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![ko](https:/translation-badge.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![nl](https:/translation-badge.vercel.app/apache/airflow/nl?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![pl](https:/translation-badge.vercel.app/apache/airflow/pl?path=airflow-core/src/airflow/ui/public/i18n/locales)
-![zh-TW](https:/translation-badge.vercel.app/apache/airflow/zh-TW?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![ar](https://translation-badge.vercel.app/apache/airflow/ar?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![de](https://translation-badge.vercel.app/apache/airflow/de?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![es](https://translation-badge.vercel.app/apache/airflow/es?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![fr](https://translation-badge.vercel.app/apache/airflow/fr?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![he](https://translation-badge.vercel.app/apache/airflow/he?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![ko](https://translation-badge.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![nl](https://translation-badge.vercel.app/apache/airflow/nl?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![pl](https://translation-badge.vercel.app/apache/airflow/pl?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![zh-TW](https://translation-badge.vercel.app/apache/airflow/zh-TW?path=airflow-core/src/airflow/ui/public/i18n/locales)
 
 
 ## API
