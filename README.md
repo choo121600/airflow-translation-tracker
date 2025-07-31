@@ -1,4 +1,4 @@
-# I18n Language Coverage Badge
+# i18n Language Coverage Badge
 
 A web service that generates language-specific translation coverage badges for GitHub repositories with i18n files.
 
@@ -13,7 +13,7 @@ A web service that generates language-specific translation coverage badges for G
 
 Language-specific coverage:
 ```markdown
-![ko]](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![ko](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ```
 ![ar](https://airflow-translation-tracker.vercel.app/apache/airflow/ar?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ![de](https://airflow-translation-tracker.vercel.app/apache/airflow/de?path=airflow-core/src/airflow/ui/public/i18n/locales)
@@ -24,8 +24,6 @@ Language-specific coverage:
 ![nl](https://airflow-translation-tracker.vercel.app/apache/airflow/nl?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ![pl](https://airflow-translation-tracker.vercel.app/apache/airflow/pl?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ![zh-TW](https://airflow-translation-tracker.vercel.app/apache/airflow/zh-TW?path=airflow-core/src/airflow/ui/public/i18n/locales)
-
-
 
 
 ## API
@@ -124,13 +122,6 @@ Handles complex plural forms for different languages:
    vercel --prod
    ```
 
-### Deploy to Other Platforms
-
-The service can also be deployed to:
-- Netlify Functions
-- Railway
-- Fly.io
-- Any Node.js hosting platform
 
 ## Development
 
@@ -182,25 +173,3 @@ The service handles various error scenarios gracefully:
 | No i18n files | "no translations found" | 404 |
 | Invalid path | "invalid path" | 400 |
 | Rate limited | "rate limited" | 429 |
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details.
-
-## Examples in the Wild
-
-Add your repository to showcase the service:
-- [Apache Airflow](https://github.com/apache/airflow) - Multi-language web UI
-- Your project here!
-
----
-
-Made with ❤️ for the i18n community
