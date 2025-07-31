@@ -16,18 +16,18 @@ A web service that generates real-time translation coverage badges for GitHub re
 
 Overall translation coverage:
 ```markdown
-![Translation Coverage](https://your-domain.vercel.app/apache/airflow?path=airflow-core/src/airflow/ui/public/i18n/locales/ko)
+![Translation Coverage](https://your-domain.vercel.app/apache/airflow?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ```
 
-![Translation Coverage](https://airflow-translation-tracker.vercel.app/apache/airflow?path=airflow-core/src/airflow/ui/public/i18n/locales/ko)
+![Translation Coverage](https://airflow-translation-tracker.vercel.app/apache/airflow?path=airflow-core/src/airflow/ui/public/i18n/locales)
 
 
 
 Language-specific coverage:
 ```markdown
-![Korean Translation](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales/ko)
+![Korean Translation](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ```
-![Korean Translation](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales/ko)
+![Korean Translation](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
 
 
 
