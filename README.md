@@ -13,9 +13,18 @@ A web service that generates language-specific translation coverage badges for G
 
 Language-specific coverage:
 ```markdown
-![Korean Translation](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![ko]](https://your-domain.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
 ```
-![Korean Translation](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![ar](https://airflow-translation-tracker.vercel.app/apache/airflow/ar?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![de](https://airflow-translation-tracker.vercel.app/apache/airflow/de?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![es](https://airflow-translation-tracker.vercel.app/apache/airflow/es?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![fr](https://airflow-translation-tracker.vercel.app/apache/airflow/fr?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![he](https://airflow-translation-tracker.vercel.app/apache/airflow/he?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![ko](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![nl](https://airflow-translation-tracker.vercel.app/apache/airflow/nl?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![pl](https://airflow-translation-tracker.vercel.app/apache/airflow/pl?path=airflow-core/src/airflow/ui/public/i18n/locales)
+![zh-TW](https://airflow-translation-tracker.vercel.app/apache/airflow/zh-TW?path=airflow-core/src/airflow/ui/public/i18n/locales)
+
 
 
 
