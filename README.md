@@ -1,6 +1,6 @@
-# I18n Coverage Badge Service
+# I18n Language Coverage Badge
 
-A web service that generates real-time translation coverage badges for GitHub repositories with i18n files, similar to shields.io badges but specifically designed for internationalization coverage tracking.
+A web service that generates language-specific translation coverage badges for GitHub repositories with i18n files.
 
 ## Features
 
@@ -8,20 +8,8 @@ A web service that generates real-time translation coverage badges for GitHub re
 - 🎨 **Customizable Badges**: Color-coded badges with multiple style options
 - ⚡ **Fast & Cached**: Efficient caching with GitHub ETag support
 - 🔍 **Auto-Detection**: Automatically detects i18n file structures
-- 📊 **Detailed Analytics**: JSON API for detailed coverage information
 
-## Usage Examples
-
-### Basic Usage
-
-Overall translation coverage:
-```markdown
-![Translation Coverage](https://your-domain.vercel.app/apache/airflow?path=airflow-core/src/airflow/ui/public/i18n/locales)
-```
-
-![Translation Coverage](https://airflow-translation-tracker.vercel.app/apache/airflow?path=airflow-core/src/airflow/ui/public/i18n/locales)
-
-
+## Usage
 
 Language-specific coverage:
 ```markdown
@@ -31,23 +19,11 @@ Language-specific coverage:
 
 
 
-### HTML Format
-```html
-<img src="https://your-domain.vercel.app/user/repo/en?path=src/i18n" alt="English Translation Coverage">
+## API
+
+Language-specific coverage badge:
 ```
-
-### Custom Styling
-```markdown
-![Korean](https://your-domain.vercel.app/apache/airflow/ko?path=locales&style=for-the-badge&logo=translate)
-```
-
-
-
-## API Endpoints
-
-### 1. Overall Coverage Badge
-```
-GET /{owner}/{repo}?path={locales_path}
+GET /{owner}/{repo}/{language}?path={locales_path}
 ```
 
 **Parameters:**
@@ -58,49 +34,7 @@ GET /{owner}/{repo}?path={locales_path}
 
 **Example:**
 ```
-GET /apache/airflow?path=airflow-core/src/airflow/ui/public/i18n/locales/ko&style=flat
-```
-
-### 2. Language-Specific Coverage Badge
-```
-GET /{owner}/{repo}/{language}?path={locales_path}
-```
-
-**Example:**
-```
-GET /apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales/ko
-```
-
-### 3. JSON API (All Languages)
-```
-GET /{owner}/{repo}/all?path={locales_path}
-```
-
-Returns detailed coverage information in JSON format:
-```json
-{
-  "repository": "apache/airflow",
-  "overall": {
-    "coverage": 85.5,
-    "languages": 8,
-    "totalKeys": 150
-  },
-  "languages": [
-    {
-      "language": "ko",
-      "coverage": 95.5,
-      "translated": 143,
-      "total": 150,
-      "missing": 7,
-      "status": "excellent"
-    }
-  ],
-  "structure": {
-    "basePath": "airflow-core/src/airflow/ui/public/i18n/locales/ko",
-    "pattern": "lang-dir"
-  },
-  "generated_at": "2024-01-15T10:30:00.000Z"
-}
+GET /apache/airflow/ko?path=airflow-core/src/airflow/ui/public/i18n/locales
 ```
 
 ## Supported File Structures
@@ -235,10 +169,10 @@ The service handles various error scenarios gracefully:
 | Error | Badge Message | HTTP Status |
 |-------|---------------|-------------|
 | Repository not found | "repository not found" | 404 |
+| Language not found | "language not found" | 404 |
 | No i18n files | "no translations found" | 404 |
 | Invalid path | "invalid path" | 400 |
 | Rate limited | "rate limited" | 429 |
-| Service unavailable | "service unavailable" | 500 |
 
 ## Contributing
 

@@ -41,15 +41,4 @@ describe('CoverageCalculator', () => {
     });
   });
 
-  describe('formatCoverageText', () => {
-    test('should format language-specific coverage correctly', () => {
-      const coverage = { coverage: 95.5 };
-      expect(calculator.formatCoverageText(coverage, 'ko')).toBe('95.5%');
-    });
-
-    test('should format overall coverage correctly', () => {
-      const coverage = { languages: 3 };
-      expect(calculator.formatCoverageText(coverage)).toBe('3/4 languages');
-    });
-  });
 });
