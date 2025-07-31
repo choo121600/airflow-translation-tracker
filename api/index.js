@@ -41,7 +41,7 @@ module.exports = async (req, res) => {
       };
 
       res.setHeader('Content-Type', 'application/json');
-      res.setHeader('Cache-Control', 'public, max-age=60');
+      res.setHeader('Cache-Control', 'public, max-age=300');
       return res.status(200).json(response);
       
     } else if (langOrAction) {
@@ -56,7 +56,8 @@ module.exports = async (req, res) => {
       const svg = badge.generateSVG(badgeLabel, badgeMessage, badgeColor, { style, logo });
 
       res.setHeader('Content-Type', 'image/svg+xml');
-      res.setHeader('Cache-Control', 'public, max-age=60');
+      res.setHeader('Cache-Control', 'public, max-age=300');
+      res.setHeader('ETag', `"${owner}-${repo}-${langOrAction}-${coverage.coverage}"`);
       return res.status(200).send(svg);
       
     } else {
@@ -71,7 +72,8 @@ module.exports = async (req, res) => {
       const svg = badge.generateSVG(badgeLabel, badgeMessage, badgeColor, { style, logo });
 
       res.setHeader('Content-Type', 'image/svg+xml');
-      res.setHeader('Cache-Control', 'public, max-age=60');
+      res.setHeader('Cache-Control', 'public, max-age=300');
+      res.setHeader('ETag', `"${owner}-${repo}-overall-${coverage.overall.coverage}"`);
       return res.status(200).send(svg);
     }
 
