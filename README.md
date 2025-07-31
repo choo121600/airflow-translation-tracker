@@ -16,18 +16,18 @@ A web service that generates real-time translation coverage badges for GitHub re
 
 Overall translation coverage:
 ```markdown
-![Translation Coverage](https://your-domain.vercel.app/apache/airflow?path=airflow/ui/public/i18n/locales)
+![Translation Coverage](https://your-domain.vercel.app/apache/airflow?path=airflow/airflow-core/src/airflow/ui/public/i18n/locales/ko)
 ```
 
-![Translation Coverage](https://airflow-translation-tracker.vercel.app/apache/airflow?path=airflow/ui/public/i18n/locales)
+![Translation Coverage](https://airflow-translation-tracker.vercel.app/apache/airflow?path=airflow/airflow-core/src/airflow/ui/public/i18n/locales/ko)
 
 
 
 Language-specific coverage:
 ```markdown
-![Korean Translation](https://your-domain.vercel.app/apache/airflow/ko?path=airflow/ui/public/i18n/locales)
+![Korean Translation](https://your-domain.vercel.app/apache/airflow/ko?path=airflow/airflow-core/src/airflow/ui/public/i18n/locales/ko)
 ```
-![Korean Translation](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=airflow/ui/public/i18n/locales)
+![Korean Translation](https://airflow-translation-tracker.vercel.app/apache/airflow/ko?path=airflow/airflow-core/src/airflow/ui/public/i18n/locales/ko)
 
 
 
@@ -59,7 +59,7 @@ GET /{owner}/{repo}?path={locales_path}
 
 **Example:**
 ```
-GET /apache/airflow?path=airflow/ui/public/i18n/locales&style=flat
+GET /apache/airflow?path=airflow/airflow-core/src/airflow/ui/public/i18n/locales/ko&style=flat
 ```
 
 ### 2. Language-Specific Coverage Badge
@@ -69,7 +69,7 @@ GET /{owner}/{repo}/{language}?path={locales_path}
 
 **Example:**
 ```
-GET /apache/airflow/ko?path=airflow/ui/public/i18n/locales
+GET /apache/airflow/ko?path=airflow/airflow-core/src/airflow/ui/public/i18n/locales/ko
 ```
 
 ### 3. JSON API (All Languages)
@@ -97,7 +97,7 @@ Returns detailed coverage information in JSON format:
     }
   ],
   "structure": {
-    "basePath": "airflow/ui/public/i18n/locales",
+    "basePath": "airflow/airflow-core/src/airflow/ui/public/i18n/locales/ko",
     "pattern": "lang-dir"
   },
   "generated_at": "2024-01-15T10:30:00.000Z"

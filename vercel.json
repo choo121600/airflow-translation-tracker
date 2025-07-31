@@ -7,15 +7,15 @@
   "rewrites": [
     {
       "source": "/:owner/:repo",
-      "destination": "/api/:owner/:repo"
+      "destination": "/api?owner=:owner&repo=:repo"
     },
     {
       "source": "/:owner/:repo/:lang", 
-      "destination": "/api/:owner/:repo/:lang"
+      "destination": "/api?owner=:owner&repo=:repo&lang=:lang"
     },
     {
       "source": "/:owner/:repo/all",
-      "destination": "/api/:owner/:repo/all"
+      "destination": "/api?owner=:owner&repo=:repo&action=all"
     }
   ]
 }
