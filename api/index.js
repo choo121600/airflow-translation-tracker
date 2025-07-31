@@ -65,14 +65,20 @@ module.exports = async (req, res) => {
       errorType = 'REPO_NOT_FOUND';
       statusCode = 404;
     } else if (error.message === 'NO_I18N_FILES' || error.message === 'NO_VALID_I18N_STRUCTURE') {
-      errorType = 'NO_I18N_FILES';
-      statusCode = 404;
+      // Try to provide a more helpful response for missing i18n files
+      const svg = badge.generateSVG(label || lang || 'i18n', 'not found', '#e05d44', { style });
+      res.setHeader('Content-Type', 'image/svg+xml');
+      res.setHeader('Cache-Control', 'public, max-age=300');
+      return res.status(200).send(svg); // Return working badge instead of 404
     } else if (error.message === 'LANGUAGE_NOT_FOUND') {
       errorType = 'LANGUAGE_NOT_FOUND';
       statusCode = 404;
     } else if (error.message === 'RATE_LIMITED') {
-      errorType = 'RATE_LIMITED';
-      statusCode = 429;
+      // For rate limited requests, show a temporary service badge instead of error
+      const svg = badge.generateSVG(label || lang || 'i18n', 'rate limited', '#ff8c00', { style });
+      res.setHeader('Content-Type', 'image/svg+xml');
+      res.setHeader('Cache-Control', 'public, max-age=30'); // Very short cache
+      return res.status(200).send(svg); // Return 200 instead of 429 for better UX
     }
     
     // Return error badge only if no fallback data available
