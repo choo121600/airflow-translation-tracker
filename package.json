@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Generate real-time translation coverage badges for GitHub repositories",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vercel dev",
     "test": "jest",
