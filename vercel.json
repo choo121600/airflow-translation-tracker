@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/:owner/:repo",
+      "destination": "/api/:owner/:repo"
+    },
+    {
+      "source": "/:owner/:repo/:lang",
+      "destination": "/api/:owner/:repo/:lang"
+    },
+    {
+      "source": "/:owner/:repo/all",
+      "destination": "/api/:owner/:repo/all"
+    }
+  ]
+}
