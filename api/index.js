@@ -24,8 +24,10 @@ module.exports = async (req, res) => {
     
     const badge = new BadgeGenerator();
     const badgeLabel = label || lang;
-    const badgeMessage = `${coverage.coverage}%`;
-    const badgeColor = calculator.getCoverageColor(coverage.coverage);
+    // Use completion rate if available (actual translations excluding TODOs), otherwise use coverage
+    const displayPercentage = coverage.completion !== undefined ? coverage.completion : coverage.coverage;
+    const badgeMessage = `${displayPercentage}%`;
+    const badgeColor = calculator.getCoverageColor(displayPercentage);
     
     const svg = badge.generateSVG(badgeLabel, badgeMessage, badgeColor, { style, logo });
 
@@ -46,8 +48,9 @@ module.exports = async (req, res) => {
       const badge = new BadgeGenerator();
       const calculator = new CoverageCalculator();
       const badgeLabel = label || lang;
-      const badgeMessage = `${fallbackCoverage.coverage}%`;
-      const badgeColor = calculator.getCoverageColor(fallbackCoverage.coverage);
+      const displayPercentage = fallbackCoverage.completion !== undefined ? fallbackCoverage.completion : fallbackCoverage.coverage;
+      const badgeMessage = `${displayPercentage}%`;
+      const badgeColor = calculator.getCoverageColor(displayPercentage);
       
       const svg = badge.generateSVG(badgeLabel, badgeMessage, badgeColor, { style, logo });
       
